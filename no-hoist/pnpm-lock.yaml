@@ -25,10 +25,12 @@ importers:
     specifiers:
       '@pmmmwh/react-refresh-webpack-plugin': ^0.4.3
       react-refresh: ^0.10.0
+      resolve-from: ^5.0.0
       webpack: '*'
     dependencies:
       '@pmmmwh/react-refresh-webpack-plugin': 0.4.3_a310eb85351d15d1b036bd5b4245fd84
       react-refresh: 0.10.0
+      resolve-from: 5.0.0
     devDependencies:
       webpack: 5.37.0
 
@@ -2012,6 +2014,11 @@ packages:
   /repeat-string/1.6.1:
     resolution: {integrity: sha1-jcrkcOHIirwtYA//Sndihtp15jc=}
     engines: {node: '>=0.10'}
+    dev: false
+
+  /resolve-from/5.0.0:
+    resolution: {integrity: sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==}
+    engines: {node: '>=8'}
     dev: false
 
   /resolve-url/0.2.1:
