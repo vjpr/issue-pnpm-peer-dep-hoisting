@@ -11,6 +11,10 @@
   "license": "ISC",
   "dependencies": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
-    "react-refresh": "^0.10.0"
+    "react-refresh": "^0.10.0",
+    "resolve-from": "^5.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.37.0"
   }
 }

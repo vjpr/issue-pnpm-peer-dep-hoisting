@@ -1,16 +1,25 @@
-let app4 = './no-hoist/packages/app-webpack4/index.js'
-console.log('Running', app4)
-require(app4)
+run('no-hoist')
+run('hoist')
 
-console.log()
+////////////////////////////////////////////////////////////////////////////////
 
-// Needed because we are running both apps from this script, and because `require('plugin')` will be cached.
-// Normally we would run each app in separate process.
-clearRequireCache()
+function run(dir) {
 
-let app5 = './no-hoist/packages/app-webpack5/index.js'
-console.log('Running', app5)
-require(app5)
+  let app4 = `./${dir}/packages/app-webpack4/index.js`
+  console.log('Running', app4)
+  require(app4)
+
+  console.log()
+
+  // Needed because we are running both apps from this script, and because `require('plugin')` will be cached.
+  // Normally we would run each app in separate process.
+  clearRequireCache()
+
+  let app5 = `./${dir}/packages/app-webpack5/index.js`
+  console.log('Running', app5)
+  require(app5)
+
+}
 
 ////////////////////////////////////////////////////////////////////////////////
 
